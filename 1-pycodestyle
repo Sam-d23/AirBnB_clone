@@ -1,17 +1,18 @@
 #!/usr/bin/python3
 
-def add(a, b):
-    result = a + b
-    return result
+
+def even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
 
 
-def mult(a, b):
-    result1 = a * b
-    return result1
+usr_input = input("Enter an integer: ")
 
-
-a = int(input('Enter a: '))
-b = int(input('Enter b: '))
-print('Sum of 3 and 5 is:', add(a, b))
-print('Product of 3 and 5 is:', mult(a, b))
-
+try:
+    number = int(usr_input)
+    result = even_odd(number)
+    print(f"The number {number} is {result}.")
+except ValueError:
+    print("Invalid input. Please enter a valid integer.")
