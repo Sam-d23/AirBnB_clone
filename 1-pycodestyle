@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+def add(a, b):
+    result = a + b
+    return result
+
+
+def mult(a, b):
+    result1 = a * b
+    return result1
+
+
+a = int(input('Enter a: '))
+b = int(input('Enter b: '))
+print('Sum of 3 and 5 is: ', add(a, b))
+print('Product of 3 and 5 is: ', mult(a, b))
