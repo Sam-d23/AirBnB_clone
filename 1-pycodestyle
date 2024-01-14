@@ -1,17 +1,15 @@
 #!/usr/bin/python3
 
-
 def even_odd(number):
     if number % 2 == 0:
         return "Even"
     else:
         return "Odd"
 
-
-usr_input = input("Enter an integer: ")
+user_input = input("Enter an integer: ")
 
 try:
-    number = int(usr_input)
+    number = int(user_input)
     result = even_odd(number)
     print(f"The number {number} is {result}.")
 except ValueError:
