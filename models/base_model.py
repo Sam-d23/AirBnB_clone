@@ -4,7 +4,7 @@ from datetime import datetime
 import models
 """Defines the class BaseModel"""
 class BaseModel:
-    """Initializes basemodel"""
+    """Initializes the basemodel"""
     def __init__(self, *args, **kwargs):
         if kwargs:
             self.__dict__.update(kwargs)
