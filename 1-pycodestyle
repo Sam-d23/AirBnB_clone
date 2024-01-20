@@ -6,7 +6,7 @@ def even_odd(number):
     else:
         return "Odd"
 
-user_input = input("Enter an integer: ")
+user_input = input("Enter an integer value: ")
 
 try:
     number = int(user_input)
