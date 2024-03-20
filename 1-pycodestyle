@@ -1,17 +1,34 @@
 #!/usr/bin/python3
 
 def even_odd(number):
+    """
+    Determine if a number is even or odd.
+
+    Args:
+        number (int): The number to check.
+
+    Returns:
+        str: "Even" if the number is even, "Odd" if it's odd.
+    """
     if number % 2 == 0:
         return "Even"
     else:
         return "Odd"
 
 
-user_input = input("Enter an integer: ")
+def main():
+    """
+    Main function to prompt the user for input and determine if it's even or odd.
+    """
+    user_input = input("Enter an integer: ")
 
-try:
-    number = int(user_input)
-    result = even_odd(number)
-    print(f"The number {number} is {result}.")
-except ValueError:
-    print("Invalid input. Please enter a valid integer.")
+    try:
+        number = int(user_input)
+        result = even_odd(number)
+        print(f"The number {number} is {result}.")
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
+
+
+if __name__ == "__main__":
+    main()
